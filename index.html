@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100"  x-data="{ open: false, showMenu: false, scrolled: false }">
+<body class="bg-gray-100 "  x-data="{ open: false, showMenu: false, scrolled: false }">
     <!-- Menú -->
     <nav @scroll.window="scrolled = (window.scrollY > 900)" class="fixed top-0 left-0 w-full h-20 z-50 transition-all duration-400 text-white" 
         :class="{'bg-black shadow-lg':scrolled, 'bg-transparent': !scrolled}">
@@ -19,8 +19,8 @@
                 <span class="text-xl font-bold pt-4 ">Alpine Fit Gym</span>
             </div>
             <!-- Icono del menú -->
-            <button class="lg:hidden focus:outline-none" @click="open = !open">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <button class="lg:hidden focus:outline-none pr-4 pt-4 " @click="open = !open">
+                <svg class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
